@@ -9,6 +9,10 @@
         <!--<package name="com.mybatis.entity"/>-->
     <!--</typeAliases>-->
 
+    <plugins>
+        <plugin interceptor="com.mybatis.plugin.MybatisSqlLoggingInterceptor"/>
+    </plugins>
+
     <environments default="dev">
         <environment id="dev">
             <transactionManager type="JDBC" />

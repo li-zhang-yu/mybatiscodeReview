@@ -28,7 +28,7 @@ public class TestFactory {
         person.setPhone("12312313123");
         personDao.insert(person);
 
-        System.out.println(person.toString());
+//        System.out.println(person.toString());
 
         sqlSession.commit();
         sqlSession.close();
